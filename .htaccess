@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteBase /
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+   RewriteRule ^index\.php$ http://itproger.am/ [R=301,L]
+
+</IfModule>
